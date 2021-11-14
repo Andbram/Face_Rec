@@ -2,8 +2,8 @@ import multiprocessing
 import dlib
 import re
 
-location = "labels_ibug_300W_train_38point.xml"
-model = "38_TreeDepth3_predictor.dat"
+location = "labels_ibug_300W_train_custom.xml"
+model = "custom_predictor.dat"
 
 options = dlib.shape_predictor_training_options()
 
