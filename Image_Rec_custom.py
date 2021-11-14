@@ -21,13 +21,12 @@ landmarks = [pose_predictor(image, face_location) for face_location in face_loca
 landmarks_as_tuples = [[(p.x, p.y) for p in landmark.parts()] for landmark in landmarks]
 
 face_landmarks_list = [{ 
-"chin": points[0:6], 
-"left_eyebrow": points[6:9], 
-"right_eyebrow": points[9:12],
-"nose_bridge": points[12:14],
-"nose_tip": points[14:17],
-"left_eye": points[17:21], 
-"right_eye": points[21:25],
+"chin": points[0:9], 
+"nose_tip": points[9:13],
+"left_eye": points[13:19], 
+"right_eye": points[19:25],
+"top_lip": points[25:32],
+"bottom_lip": points[32:38]
 } for points in landmarks_as_tuples]
         
 print("I found {} face(s) in this photograph.".format(len(face_landmarks_list)))
