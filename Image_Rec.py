@@ -11,7 +11,7 @@ pose_predictor_68_point = dlib.shape_predictor(predictor_68_point_model)
 pose_predictor = pose_predictor_68_point
 
 
-image = np.array(PIL.Image.open("obama-1080p.jpg"))
+image = np.array(PIL.Image.open("obama.jpg"))
 face_detector = dlib.get_frontal_face_detector()
 face_locations = face_detector(image, 1)
 
