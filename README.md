@@ -36,3 +36,34 @@ python3 face_rec.py
 ```
 
 This will open a picture of President Obama with his facial features outlined in white lines. These white lines are made up of the 68 point representing a face that can be seen in the "68 Facial Points.jpg" file. 
+
+image_rec using a model .dat  file for its facial recognition. Next we will use the ibug dataset to train a new .dat file. This is done by using these programs. These will take up alot of memory so if the virtual machine does not have atleast 30 GB of memory, it might freeze.
+```
+python3 parse_xml.py
+python3 train_shape_predictor.py
+```
+This now created the "custom_predictor.dat" file. To use the new .dat file, enter this into terminal.
+```
+python3 image_rec_custom.py
+```
+This will again bring up an image of President Obama with lines outlining his facial features. This time less features will be outlined.
+
+This will result in a faster facial recognition since it has less points to measure but with more error. 
+
+To test the error rate of the new model go to the "parse_xml.py" file and edit lines 3 and 4 from
+```
+inpt = "labels_ibug_300W_train.xml"
+outpt = "labels_ibug_300W_train_custom.xml"
+```
+to 
+```
+inpt = "labels_ibug_300W_test.xml"
+outpt = "labels_ibug_300W_test_custom.xml"
+```
+Next run these to test the new .dat file error rate.
+```
+python3 parse_xml.py
+python3 test_shape_predictor.py
+```
+This will output an error rate.
+
