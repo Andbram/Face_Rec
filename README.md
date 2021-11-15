@@ -30,4 +30,4 @@ http://dlib.net/files/data/ibug_300W_large_face_landmark_dataset.tar.gz
 
 Once it is downloaded, extract the contents and copy the contents of the "ibug_300W_large_face_landmark_dataset" file into the face_rec folder.
 
-
+Now 
