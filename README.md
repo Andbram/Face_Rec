@@ -1,7 +1,7 @@
 # face_rec
 
 These python programs use dlib on Linux for facial feature recognition using the facial_recognition tool found here.
-```https://github.com/ageitgey/face_recognition```
+https://github.com/ageitgey/face_recognition
 
 These programs were developed on Ubuntu with a virtual machine using VirtualBox. Some extra tools may need to be installed seperately if a different Linux distrobution is used.
 
