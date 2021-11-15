@@ -31,6 +31,8 @@ http://dlib.net/files/data/ibug_300W_large_face_landmark_dataset.tar.gz
 Once it is downloaded, extract the contents and copy the contents of the "ibug_300W_large_face_landmark_dataset" file into the face_rec folder.
 
 Now the face_rec tool is ready to use. To run the program, enter this into the terminal.
-```python3 face_rec.py```
+```
+python3 face_rec.py
+```
 
 This will open a picture of President Obama with his facial features outlined in white lines. These white lines are made up of the 68 point representing a face that can be seen in the "68 Facial Points.jpg" file. 
