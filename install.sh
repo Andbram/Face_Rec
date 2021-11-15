@@ -9,4 +9,3 @@ mkdir build; cd build; cmake ..; cmake --build .
 cd ..
 pip3 install face_recognition
 git clone https://github.com/ageitgey/face_recognition.git
-git clone https://github.com/Andbram/face_rec.git
