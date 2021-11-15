@@ -60,7 +60,7 @@ to
 inpt = "labels_ibug_300W_test.xml"
 outpt = "labels_ibug_300W_test_custom.xml"
 ```
-Next run these to test the new .dat file error rate.
+Next run these in terminal to test the new .dat file error rate.
 ```
 python3 parse_xml.py
 python3 test_shape_predictor.py
