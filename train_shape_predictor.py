@@ -25,14 +25,14 @@ options.nu = 0.1
 # parameter has a *dramtic* impact on both the *accuracy* and *output
 # size* of your model; the more cascades you have, the more accurate
 # your model can potentially be, but also the *larger* the output size
-options.cascade_depth = 15
+options.cascade_depth = 10
 
 # number of pixels used to generate features for the random trees at
 # each cascade -- larger pixel values will make your shape predictor
 # more accurate, but slower; use large values if speed is not a
 # problem, otherwise smaller values for resource constrained/embedded
 # devices
-options.feature_pool_size = 400
+options.feature_pool_size = 200
 
 # selects best features at each cascade when training -- the larger
 # this value is, the *longer* it will take to train but (potentially)
