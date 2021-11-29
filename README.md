@@ -67,6 +67,26 @@ python3 test_shape_predictor.py
 ```
 This will output an error rate.
 
+parse_xml.py
+
+This file is used to edit the ibug ".xml" files that contain the point data for the ibug data set. This files reads through the ".xml" file and removes the point data that is outside of the range you specify.
+
+To change which ".xml" file is being used as the input data, change line 3 to your desired ".xml" file. You really only need to change this between the "labels_ibug_300W_train.xml" and the "labels_ibug_300W_test.xml"
+```
+inpt = "YOUR FILE HERE.xml"
+```
+
+To change which ".xml" file is being used to store the output data, change line 4 to your desired ".xml" file name.
+```
+outpt = "YOUR FILE HERE.xml"
+```
+
+To change the desire points to be stored inside the ouput file, change line 6 to your desired points. Review the "68 Facial Points.jpg" file to see which points relate to each part of the face.
+```
+LANDMARKS = {YOUR POINTS HERE}
+```
+
+
 image_rec_custom.py
 
 This file is used to perform image recognition on a image of your choice with the training date you chose. It will display the point data generated with connecting lines to outline each part of the face.
