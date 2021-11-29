@@ -2,8 +2,8 @@ import multiprocessing
 import dlib
 import re
 
-location = "labels_ibug_300W_train_custom.xml"
-model = "custom_predictor.dat"
+xml = "labels_ibug_300W_train_custom.xml"
+dat = "custom_predictor.dat"
 
 options = dlib.shape_predictor_training_options()
 
@@ -59,4 +59,4 @@ options.be_verbose = True
 options.num_threads = multiprocessing.cpu_count()
 
 print(options)
-dlib.train_shape_predictor(location, model, options)
+dlib.train_shape_predictor(xml, dat, options)
