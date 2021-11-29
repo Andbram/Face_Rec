@@ -6,11 +6,9 @@ import numpy as np
 from PIL import Image, ImageFile, ImageDraw
 from pkg_resources import resource_filename
 
-predictor_35_point_model = resource_filename(__name__, "custom_predictor.dat")
-pose_predictor_35_point = dlib.shape_predictor(predictor_35_point_model)
-
-pose_predictor = pose_predictor_35_point
-
+predictor_custom_model = resource_filename(__name__, "custom_predictor.dat")
+pose_predictor_custom = dlib.shape_predictor(predictor_custom_model)
+pose_predictor = pose_predictor_custom
 
 image = np.array(PIL.Image.open("obama.jpg"))
 face_detector = dlib.get_frontal_face_detector()
