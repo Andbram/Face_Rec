@@ -1,6 +1,5 @@
 import multiprocessing
 import dlib
-import re
 
 xml = "labels_ibug_300W_train_custom.xml"
 dat = "custom_predictor.dat"
