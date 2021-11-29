@@ -126,4 +126,16 @@ If any point data is changed in the new ".dat" file then the point list one line
 "bottom_lip": points[32:38]
 ```
 
+**test_shape_predictor.py**
 
+This file is used to test the error rate of a trained dataset to see how accurate it is.
+
+To change which ".dat" file is being tested, edit line 3 to be your desired ".dat" file.
+```
+dat = "YOUR FILE HERE.dat"
+```
+
+To change which ".xml" file is being used to test the shape predictor on, edit line 4 to be your desired ".xml" file.
+```
+xml = "YOUR FILE HERE.xml"
+```
