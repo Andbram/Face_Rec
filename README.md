@@ -81,6 +81,14 @@ To change the image, edit the ".jpg" file on line 14 to your own image.
 image = np.array(PIL.Image.open("YOUR IMAGE HERE.jpg"))
 ```
 
-
+If any point data is changed in the new ".dat" file then the point list one lines 22 - 27 need to be changed to match the new point data. For example, the first 9 points in the provided "custom_predictior.dat" file relate to the chin. So "chin: points[0:9]" is used to link those points together as the chin.
+```
+"chin": points[0:9], 
+"nose_tip": points[9:13],
+"left_eye": points[13:19], 
+"right_eye": points[19:25],
+"top_lip": points[25:32],
+"bottom_lip": points[32:38]
+```
 
 
