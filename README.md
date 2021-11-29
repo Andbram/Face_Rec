@@ -67,3 +67,20 @@ python3 test_shape_predictor.py
 ```
 This will output an error rate.
 
+image_rec_custom.py
+
+This file is used to perform image recognition on a image of your choice with the training date you chose. It will display the point data generated with connecting lines to outline each part of the face.
+
+To change the training data, edit the ".dat" file on line 9 to your own training data.
+```
+predictor_custom_model = resource_filename(__name__, "YOUR FILE HERE .dat")
+```
+
+To change the image, edit the ".jpg" file on line 14 to your own image.
+```
+image = np.array(PIL.Image.open("YOUR IMAGE HERE.jpg"))
+```
+
+
+
+
