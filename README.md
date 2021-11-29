@@ -86,6 +86,21 @@ To change the desire points to be stored inside the ouput file, change line 6 to
 LANDMARKS = {YOUR POINTS HERE}
 ```
 
+train_shape_predictor.py
+
+This file is used to train the shape predictor based on the ".xml" file you provide it with. It will output the trained ".dat" file.
+
+To change the input ".xml" file, edit line 4 to be the ".xml" file you want to be trained off.
+```
+xml = "YOUR FILE HERE.xml"
+```
+
+To change the output ".dat" file, edit line 5 to be the ".dat" file you want to store the trained data to.
+```
+dat = "YOUR FILE HERE.dat"
+```
+
+To change the options for training the shape predictor, edit lines 14, 21, 27, 34, 39, 45, 49, 53, 58. The changes each option has on the training are described above each of the options. 
 
 image_rec_custom.py
 
