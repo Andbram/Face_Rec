@@ -67,7 +67,7 @@ python3 test_shape_predictor.py
 ```
 This will output an error rate.
 
-parse_xml.py
+**parse_xml.py**
 
 This file is used to edit the ibug ".xml" files that contain the point data for the ibug data set. This files reads through the ".xml" file and removes the point data that is outside of the range you specify.
 
@@ -86,7 +86,7 @@ To change the desire points to be stored inside the ouput file, change line 6 to
 LANDMARKS = {YOUR POINTS HERE}
 ```
 
-train_shape_predictor.py
+**train_shape_predictor.py**
 
 This file is used to train the shape predictor based on the ".xml" file you provide it with. It will output the trained ".dat" file.
 
@@ -102,7 +102,7 @@ dat = "YOUR FILE HERE.dat"
 
 To change the options for training the shape predictor, edit lines 14, 21, 27, 34, 39, 45, 49, 53, 58. The changes each option has on the training are described above each of the options. 
 
-image_rec_custom.py
+**image_rec_custom.py**
 
 This file is used to perform image recognition on a image of your choice with the training date you chose. It will display the point data generated with connecting lines to outline each part of the face.
 
