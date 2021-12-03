@@ -8,5 +8,5 @@ cd dlib
 mkdir build; cd build; cmake ..; cmake --build .
 cd ..
 pip3 install face_recognition
-pip install multiprocess
+pip3 install multiprocessing
 git clone https://github.com/ageitgey/face_recognition.git
