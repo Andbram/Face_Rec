@@ -1,6 +1,5 @@
 sudo apt update
 sudo apt upgrade
-sudo apt install git
 sudo apt install cmake
 sudo apt install python3-pip
 git clone https://github.com/davisking/dlib.git
