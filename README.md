@@ -20,7 +20,7 @@ Next enter this into the terminal to download the tools needed to run the face_r
 ```
 cd face_rec
 chmod +x install
-./install
+./install.sh
 ```
 
 Next we need to download the dataset that will be used by the face_rec tool. That is done by entering this into a browser search bar.
