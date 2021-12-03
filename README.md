@@ -19,7 +19,7 @@ sudo apt install git
 git clone https://github.com/Andbram/face_rec.git
 ```
 
-Next enter this into the terminal to download the tools needed to run the face_rec tool.
+Next enter this into the terminal to download the tools needed to run the face_rec tool. This process will take alot of time.
 ```
 cd face_rec
 chmod +x install.sh
