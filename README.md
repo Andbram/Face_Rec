@@ -11,7 +11,7 @@ Ubuntu: https://ubuntu.com/download/desktop
 
 Here is a guide for setting up Ubuntu on VirtualBox: https://itsfoss.com/install-linux-in-virtualbox/
 
-Once Ubuntu is setup on a virtual machine it is time to download the contents of this github. To do this, type this into the terminal.
+Once Ubuntu is setup on a virtual machine, it is time to download the contents of this github. To do this, type this into the terminal.
 ```
 git clone https://github.com/Andbram/face_rec.git
 ```
