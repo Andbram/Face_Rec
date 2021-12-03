@@ -19,7 +19,7 @@ git clone https://github.com/Andbram/face_rec.git
 Next enter this into the terminal to download the tools needed to run the face_rec tool.
 ```
 cd face_rec
-chmod +x install
+chmod +x install.sh
 ./install.sh
 ```
 
