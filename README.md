@@ -40,7 +40,7 @@ python3 image_rec.py
 
 This will open a picture of President Obama with his facial features outlined in white lines. These white lines are made up of the 68 point representing a face that can be seen in the "68 Facial Points.jpg" file. 
 
-image_rec using a model .dat  file for its facial recognition. Next we will use the ibug dataset to train a new .dat file. This is done by using these programs. These will take up alot of memory so if the virtual machine does not have atleast 20 GB of memory, it might freeze. Keep an eye on system monitor and stop it if it seems like it will cap your ram on the virtual machine. If this happens, training options can be adjusted to reduce ram requirements.
+image_rec using a model .dat  file for its facial recognition. Next we will use the ibug dataset to train a new .dat file. This is done by using these programs. These will take up alot of memory so if the virtual machine does not have atleast 20 GB of ram, it might freeze. Keep an eye on system monitor and stop it if it seems like it will cap your ram on the virtual machine. If this happens, training options can be adjusted to reduce ram requirements.
 ```
 python3 parse_xml.py
 python3 train_shape_predictor.py
